@@ -12,12 +12,22 @@ function wordRandomizer(word) {
     newWord[randomIndex] = temp.toLowerCase();
   }
 
-  return newWord.join(" ");
+  return newWord.join("");
+}
+
+function sentenceRandomizer(sentence) {
+  let newSentence = sentence.split(" ");
+
+  for (let j = 0; j < newSentence.length; j++) {
+    newSentence[j] = wordRandomizer(newSentence[j]);
+  }
+
+  return newSentence.join(" ");
 }
 
 function wordStorage() {
   let inputValue = wordInput.value;
-  let result = wordRandomizer(inputValue);
+  let result = sentenceRandomizer(inputValue);
   wordExtender.innerHTML += `
   <div>
   <p>${result}<p>
