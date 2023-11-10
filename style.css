@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.6em;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#word-input {
+  height: 50px;
+  width: 200px;
+  padding-left: 120px;
+  border-radius: 10px;
+  border: 1px solid green;
+  font-size: 0.7em;
+  background-color: black;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  height: 50px;
+  width: 250px;
+  font-size: 0.7em;
+  border: 0;
+  background-color: green;
+  color: black;
+  border-radius: 10px;
+}
+
+#word-extender {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
